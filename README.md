@@ -2,7 +2,7 @@
 
 Submitted by: **Ya Ji**
 
-This web app: **insert description**
+This web app: **Recipe Search is a responsive dashboard application that helps users discover recipes based on ingredients they already have at home. The app fetches recipe data from the Spoonacular API and displays it in an organized table format with helpful summary statistics. Users can filter recipes through a search bar, dropdown selection for missing ingredients, custom numeric boundaries, and a slider for minimum popularity. The dashboard updates dynamically as filters are applied, allowing users to quickly narrow down recipes that match their preferences. Once a recipe is selected, detailed information is displayed, including ingredients, instructions, and nutritional data.**
 
 Time spent: **5** hours spent in total
 
