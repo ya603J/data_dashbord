@@ -455,3 +455,473 @@ footer a:hover {
   font-size: 1.2rem;
   color: var(--dark-gray);
 }
+
+/* View Mode Toggle */
+.view-mode-toggle {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.mode-button {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.mode-button.active {
+  background-color: #4caf50;
+  color: white;
+  border-color: #388e3c;
+}
+
+.mode-button:hover:not(.active) {
+  background-color: #e0e0e0;
+}
+
+/* Favorites */
+.favorite-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  padding: 5px;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.2);
+}
+
+.favorite-btn.favorited {
+  color: #ff4081;
+}
+
+.empty-favorites {
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.empty-favorites p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.empty-favorites p:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Recipe Header with Favorite Button */
+.recipe-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.recipe-header h2 {
+  margin: 0;
+  flex: 1;
+}
+
+.detail-favorite {
+  font-size: 28px;
+  margin-left: 15px;
+}
+
+/* Nutrition Chart */
+.nutrition-section {
+  margin-top: 30px;
+}
+
+.nutrition-chart {
+  margin-top: 20px;
+}
+
+.nutrition-bar-container {
+  margin-bottom: 15px;
+}
+
+.nutrition-label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.nutrition-bar-wrapper {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  height: 24px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nutrition-bar {
+  height: 100%;
+  min-width: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: width 0.5s ease;
+}
+
+.nutrition-value {
+  color: white;
+  font-weight: bold;
+  padding: 0 10px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Dashboard Charts */
+.dashboard-charts {
+  margin: 30px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.chart-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.chart-tab {
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.chart-tab.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.chart-tab:hover:not(.active) {
+  background-color: #e0e0e0;
+}
+
+.chart-container {
+  min-height: 320px;
+}
+
+.chart {
+  text-align: center;
+}
+
+.chart h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.chart-bars {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 240px;
+  padding: 0 10px;
+}
+
+.chart-bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+}
+
+.chart-bar {
+  width: 40px;
+  background-color: #4caf50;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 20px;
+  transition: height 0.5s ease;
+}
+
+.bar-value {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 3px 0;
+}
+
+.bar-label {
+  font-size: 12px;
+  color: #555;
+}
+
+.chart-axis-label {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+.missing-ingredients-chart .chart-bar {
+  background-color: #ff9800;
+}
+
+.likes-chart .chart-bar {
+  background-color: #2196f3;
+}
+
+/* Charts Toggle Button */
+.charts-toggle {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.toggle-charts-button {
+  padding: 8px 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.toggle-charts-button.active {
+  background-color: #4caf50;
+  color: white;
+  border-color: #388e3c;
+}
+
+.toggle-charts-button:hover:not(.active) {
+  background-color: #e0e0e0;
+}
+
+/* Nutrition Charts Container */
+.nutrition-charts-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .nutrition-charts-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Radar Chart */
+.radar-section {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.radar-chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+@media (min-width: 500px) {
+  .radar-chart-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+
+.radar-chart {
+  position: relative;
+  width: 280px;
+  height: 320px;
+  margin-bottom: 20px;
+}
+
+.radar-background,
+.radar-data {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.radar-circle {
+  fill: none;
+  stroke: #e0e0e0;
+  stroke-width: 0.5;
+}
+
+.radar-axis {
+  stroke: #ccc;
+  stroke-width: 0.5;
+}
+
+.radar-label {
+  font-size: 8px;
+  fill: #666;
+}
+
+.radar-polygon {
+  fill: rgba(76, 175, 80, 0.3);
+  stroke: #4CAF50;
+  stroke-width: 1.5;
+}
+
+.radar-point {
+  fill: #4CAF50;
+}
+
+.radar-legend {
+  flex-shrink: 0;
+  max-width: 170px;
+}
+
+.radar-legend h4 {
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+}
+
+.radar-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radar-metric {
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.radar-metric:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+.radar-metric-name {
+  font-weight: 500;
+  color: #333;
+  margin-right: 8px;
+}
+
+.radar-metric-value {
+  color: #555;
+}
+
+/* Remove old pie chart styles since they're no longer needed */
+.macro-section {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+/* Keep the other styles from the pie chart that we need for the radar chart */
+.macro-chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+@media (min-width: 500px) {
+  .macro-chart-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.pie-chart {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.pie-segment {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+}
+
+.protein-segment {
+  background-color: #34C759;
+}
+
+.fat-segment {
+  background-color: #FF3B30;
+}
+
+.carbs-segment {
+  background-color: #007AFF;
+}
+
+.macro-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.protein-color {
+  background-color: #34C759;
+}
+
+.fat-color {
+  background-color: #FF3B30;
+}
+
+.carbs-color {
+  background-color: #007AFF;
+}
+
+.legend-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.macro-description {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
